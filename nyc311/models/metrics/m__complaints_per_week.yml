@@ -1,0 +1,15 @@
+version: 2
+
+models: 
+  - name: "m__complaints_per_week"
+    description: "counts of complaints per week"
+    
+    columns:
+      - name: "complaints_per_week"
+        description: "count of complaints per week"
+        tests:
+          - not_null
+     
+      - name: "week"
+        description: "week for the count of complaints"
+
