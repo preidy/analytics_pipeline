@@ -4,6 +4,7 @@ sys.path.append('/home/preidy/Code/analytics_pipeline/airflow/')
 
 from airflow import DAG
 from airflow.contrib.operators.bigquery_operator import BigQueryOperator
+from airflow_dbt.operators.dbt_operator import DbtRunOperator, DbtTestOperator
 
 
 default_args = {
@@ -29,5 +30,16 @@ extract_and_load = BigQueryOperator(
     location='US',
     project_id='pat-scratch',
     dag=dag
-    
 )
+
+dbt_run = DbtRunOperator(
+    task_id='dbt_run',
+    dag=dag
+)
+
+dbt_test = DbtTestOperator(
+    task_id='dbt_test',
+    dag=dag
+)
+
+extract_and_load >> dbt_run >> dbt_test
