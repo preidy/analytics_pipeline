@@ -1,6 +1,13 @@
 apache-airflow==1.10.13
-dbt==0.18.1
+dbt-bigquery==0.18.1
 seaborn==0.11.1
 notebook==6.1.6
-protobuf==3.11.3
 airflow-dbt==0.3.0
+protobuf==3.14.0
+httplib2==0.11.3
+google-api-python-client>=1.5.0, <1.6.0
+oauth2client>=2.0.2, <2.1.0
+PyOpenSSL
+pandas-gbq
+google-cloud-storage
+google-auth-httlib2

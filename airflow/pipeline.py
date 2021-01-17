@@ -34,11 +34,13 @@ extract_and_load = BigQueryOperator(
 
 dbt_run = DbtRunOperator(
     task_id='dbt_run',
+    dir='/home/preidy/Code/analytics_pipeline/nyc311/',
     dag=dag
 )
 
 dbt_test = DbtTestOperator(
     task_id='dbt_test',
+    dir='/home/preidy/Code/analytics_pipeline/nyc311/',
     dag=dag
 )
 
