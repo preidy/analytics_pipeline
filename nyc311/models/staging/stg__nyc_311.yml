@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: "stg__nyc_311"
+    description: "staging view for raw data"
+

@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: "d__complaints"
+    description: "contains additional dimensions for each complaint"
+  
+    columns:
+      - name: "unique_key"
+        description: "unique identifier for complaint"
+        tests:
+          - unique
+
+      - name: "agency_name"
+        description: "name of responsible agency"
+
+      - name: "complaint_type"
+        description: "type of complaint"
+
+      - name: "borough"
+        description: "borough in which complaint took place"

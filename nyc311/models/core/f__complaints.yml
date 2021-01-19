@@ -1,0 +1,22 @@
+version: 2
+
+models: 
+  - name: "f__complaints"
+    description: "contains timestamps of complaints"
+    
+    columns:
+      - name: "unique_key"
+        description: "unique id for complaint"
+        tests:
+          - unique
+          - not_null
+     
+      - name: "created_date"
+        description: "time when complaint was opened"
+     
+      - name: "closed_date"
+        description: "time when complaint was closed"
+     
+      - name: "total_time_hours"
+        description: "total time in hours that complaint took"
+
