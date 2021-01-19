@@ -2,4 +2,4 @@
 
 This repo demos an end to end analytics pipeline using GCP BigQuery, Airflow, DBT, and Jupyter notebook.
 
-Write up: https://pat-scratch.atlassian.net/wiki/spaces/DEMOS/pages/98443/Building+a+data+analytics+pipeline
+See "analytic_pipeline_writeup.pdf" for an explanation of code and motivation for project.
